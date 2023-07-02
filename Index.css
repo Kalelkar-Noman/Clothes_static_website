@@ -3,19 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     text-align: center;
 }
 
-/* .row{
-    --bs-gutter-y: 8px;
-} */
-/* img {
-    object-fit: contain;
-    object-position: center;
-} */
-
-/* change it according to image */
 .carousel-item img {
     height: 34vw;
     min-height: 8cm;
@@ -62,7 +53,6 @@ footer ul span {
 /* MAIN */
 main {
     display: grid;
-    /* grid-gap: 8px; */
     grid-gap: 14px;
 }
 
@@ -97,12 +87,10 @@ main {
 }
 
 .carousel-control-prev {
-    /* left: -6vw; */
     left: -8vw;
 }
 
 .carousel-control-next {
-    /* right: -6vw; */
     right: -8vw;
 }
 
@@ -127,10 +115,6 @@ footer ul {
 .card {
     width: 16vw;
     min-width: 200px;
-    /*190*/
-    /* height: 254px; */
-    /* padding: .8em; */
-    /* background: #f5f5f5; */
     position: relative;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -194,15 +178,6 @@ svg {
     width: -webkit-fill-available;
 }
 
-/* ------------------------------ */
-
-/* .second-section .row {
-    display: grid;
-    justify-content: space-evenly;
-    grid-auto-flow: column;
-    align-items: center;
-} */
-/* .second-section .row  */
 .second-section .col-sm-6,
 .third-section .col-sm-6,
 .fourth-section .col-sm-6 {
@@ -243,11 +218,9 @@ footer span {
 
 /* ---------------- */
 .third-section img {
-    /* width: 5cm; */
     width: 35vw;
     height: 100%;
     min-width: 200px;
-    /*220*/
 }
 
 .third-section .row .help-btn-div {
@@ -255,9 +228,6 @@ footer span {
     flex-direction: row-reverse;
 }
 
-/* .third-section .col-sm-6 {
-    background-color: sienna;
-} */
 /* ------------------------------- */
 .card-title {
     color: #262626;
@@ -278,33 +248,11 @@ footer span {
     font-size: 1em;
 }
 
-/* .go-corner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 2em;
-    height: 2em;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    background: linear-gradient(135deg, #6293c8, #384c6c);
-    border-radius: 0 4px 0 32px;
-} */
-
-/* .go-arrow {
-    margin-top: -4px;
-    margin-right: -4px;
-    color: white;
-    font-family: courier, sans;
-} */
-
 .card-2 {
     display: block;
     position: relative;
     max-width: 300px;
     max-height: 320px;
-    /* background-color: #f2f8f9; */
     background-color: #f5f5f5;
     border-radius: 10px;
     padding: 2em 1.2em;
@@ -312,7 +260,6 @@ footer span {
     text-decoration: none;
     z-index: 0;
     overflow: hidden;
-    /* background: linear-gradient(to bottom, #c3e6ec, #a7d1d9); */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -322,7 +269,6 @@ footer span {
     z-index: -1;
     top: -16px;
     right: -16px;
-    /* background: linear-gradient(135deg, #364a60, #384c6c); */
     background: #343a40;
     height: 32px;
     width: 32px;
@@ -375,7 +321,6 @@ form label {
 }
 
 /* --------------- */
-/* -- */
 @media (max-width:768px) {
 
     nav .right,
@@ -434,6 +379,35 @@ footer {
     font-size: 12px;
 }
 
+form input {
+    max-width: -webkit-fill-available;
+    margin-bottom: 6px;
+}
 
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    padding-bottom: 10px;
+}
 
 /* ------------- */
+.fade-up {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-up.inview {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
