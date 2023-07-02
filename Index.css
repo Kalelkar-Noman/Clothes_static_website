@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
     text-align: center;
 }
 
@@ -212,6 +212,15 @@ svg {
     margin: 8px 0;
 }
 
+.borders {
+    border-bottom: 1px solid rgb(14, 17, 17);
+}
+
+.borders div:nth-child(2) {
+    border-left: 1px solid rgb(14, 17, 17);
+    border-right: 1px solid rgb(14, 17, 17);
+}
+
 /* END MAIN */
 
 /* Google icons */
@@ -369,14 +378,51 @@ form label {
 /* -- */
 @media (max-width:768px) {
 
-    nav .left,
-    nav .right {
+    nav .right,
+    nav .left {
         display: none;
     }
 
     .third-section .row .help-btn-div {
         justify-content: center;
         margin: 8px 0;
+    }
+
+    .borders {
+        border-bottom: none;
+    }
+
+    .borders div:nth-child(2) {
+        border-left: 1px solid rgb(14, 17, 17);
+        border-right: none;
+    }
+
+    .borders .align-center div {
+        border-bottom: 2px dotted black;
+    }
+
+    .card,
+    .third-section img {
+        width: 80vw;
+    }
+}
+
+@media (max-width:576px) {
+    .borders div:nth-child(2) {
+        border-left: none;
+    }
+
+    .card,
+    .third-section img {
+        min-width: 80vw;
+    }
+}
+
+@media (max-width:992px) {
+
+    .card,
+    .third-section img {
+        width: 30vw;
     }
 }
 
@@ -387,3 +433,7 @@ footer {
 .copyright {
     font-size: 12px;
 }
+
+
+
+/* ------------- */
