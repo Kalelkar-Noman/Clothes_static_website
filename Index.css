@@ -411,3 +411,23 @@ footer ul li {
         opacity: 1;
     }
 }
+/* -------------------- try */
+@media (max-width: 576px) {
+  .row {
+    flex-direction: column;
+  }
+   .left, .right {
+    width: 100%;
+  }
+   .carousel-item img {
+    height: auto;
+    width: 100%;
+  }
+   .carousel-inner {
+    height: auto;
+  }
+   .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
+}
+/* ------ */
