@@ -8,4 +8,3 @@ const elements = document.getElementsByClassName("fade-up"),
   observer = new IntersectionObserver(handleIntersection);
 Array.from(elements).forEach((e) => observer.observe(e));
 
-async function does() {
